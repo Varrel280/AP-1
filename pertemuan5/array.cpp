@@ -124,3 +124,120 @@
      // }
  }
 
+
+#include <iostream>     // Untuk input/output standar
+#include <string>       // Untuk tipe data string dan fungsinya
+#include <array>        // Untuk penggunaan array STL modern
+using namespace std;
+
+int main () {
+
+    // ---------------------------
+    // Array Declaration & Initialization
+    // ---------------------------
+
+    // Cara 1: Array kosong, diisi manual
+    // string nama[5];
+    // nama[0] = "Alya";
+    // ...
+
+    // Cara 2: Langsung inisialisasi isi array
+    // string nama[5] = {"Alya", "Parul", "Syukron", "Aurick", "Dzakwan"};
+    // string nama[] = {"Alya", "Parul", "Syukron", "Aurick", "Dzakwan"};
+
+    // ---------------------------
+    // Menampilkan array (ascending)
+    // ---------------------------
+    // for (int i = 0; i < 5; i++) {
+    //     cout << nama[i] << endl;
+    // }
+
+    // ---------------------------
+    // Menampilkan array (descending)
+    // ---------------------------
+    // for (int i = 4; i >= 0; i--) {
+    //     cout << nama[i] << endl;
+    // }
+
+    // ---------------------------
+    // Multidimensional Array
+    // ---------------------------
+    // int matrix[2][3] = {{1,3,5},{2,4,6}};
+    // for(int i = 0; i < 2; i++){
+    //     for(int j = 0; j < 3; j++){
+    //         cout << matrix[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // Matriks 4x6
+    // int matrix[4][6] = {...};
+    // for(int i = 0; i < 4; i++){
+    //     for(int j = 0; j < 6; j++){
+    //         cout << matrix[i][j] << "\t";
+    //     }
+    //     cout << endl;
+    // }
+
+    // ---------------------------
+    // String sebagai array karakter
+    // ---------------------------
+    // string nama = "Naufal";
+    // cout << nama[0]; // akses karakter pertama
+    // for(int i = 0; i < nama.length(); i++){
+    //     cout << nama[i] << endl;
+    // }
+
+    // ---------------------------
+    // Operasi dasar pada string
+    // ---------------------------
+    // string s1 = "Hello", s2 = "world";
+    // s1 = s2;
+    // cout << "s1: " << s1;
+
+    // s1 = "Hello";
+    // cout << s1 + s2; // penggabungan
+
+    // cout << s1.length(); // panjang string
+    // cout << (s1 + s2).length();
+
+    // cout << s1.substr(2,4); // substring dari indeks ke-2 sepanjang 4 karakter
+    // cout << (s1 + s2).substr(5, 3); // substring dari gabungan string
+
+    // ---------------------------
+    // Operator sizeof()
+    // ---------------------------
+    // int angka = 10;
+    // cout << sizeof(angka); // ukuran dalam byte
+
+    // int nilai[] = {10, 20, 30, 40, 50};
+    // cout << sizeof(nilai); // ukuran total array dalam byte
+
+    // string s = "Alya";
+    // cout << sizeof(s); // ukuran objek string (bukan panjang karakter)
+    // cout << s.length(); // jumlah karakter
+
+    // ---------------------------
+    // Menghitung jumlah elemen array
+    // ---------------------------
+    // string nama_karyawan[] = {"Alya", "Parul", "Syukron", "Aurick", "Dzakwan"};
+    // int n = sizeof(nama_karyawan) / sizeof(string); // jumlah elemen
+    // cout << n << endl;
+
+    // ---------------------------
+    // Array Library STL (C++11)
+    // ---------------------------
+    // array<float, 5> nilai = {87.2, 90, 100, 95.7, 78.5};
+
+    // Menampilkan dengan indeks
+    // for (int i = 0; i < nilai.size(); i++) {
+    //     cout << nilai[i] << " ";
+    // }
+
+    // Menampilkan dengan range-based loop
+    // for (float n : nilai) {
+    //     cout << n << " ";
+    // }
+}
+
+
