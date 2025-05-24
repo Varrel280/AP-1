@@ -5,15 +5,18 @@ int main() {
     char nama[50];
     int nim;
     char kom[2];
-    float ip;
+    float ip; //pendeklarasian variabel
 
     printf("Hello World\n"); // fungsi keluaran pada C
+      printf("hello world\n"); //printf -> menampilkan
 
     printf("Masukkan nama : ");
     gets(nama); // get string
+      gets(nama); //get string, agar bisa membaca karakter spasi
 
     printf("Masukkan nim : ");
     scanf("%d", &nim); // fungsi masukan pada C
+    scanf("%d", &nim); //scanf -> menerima inputan
 
     getchar();
 
