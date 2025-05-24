@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int main (){
-    float Luas, p, L;
+int main()
+{
+    system("cls");
+    const float phi=3.14; //deklarasi konstanta
+    float r,volume,luas;
+    cout<<"masukkan jari-jari: ";
+    cin>>r;
 
-    cout << "Masukkan panjang : ";
-    cin >> p;
+    volume=((float)4/(float)3)*phi*r*r*r; //rumus volume bola
+    luas=4*phi*r*r; //rumus luas bola
 
-    cout << "Masukkan lebar : ";
-    cin >> L;
-
-    Luas = p * L;
-    cout <<"Luas = " << Luas << endl;
-
-    return 0;
+    cout<<"volume bola= "<<volume<<endl;
+    cout<<"luas permukaan bola= "<<luas<<endl
 }
